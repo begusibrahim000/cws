@@ -1,0 +1,6 @@
+========== 24 september 2020 ==========
+
+# cara menjalankan aplikasi
+    - cd api
+    - klik kanan di dalam halaman code
+    - pilih "Open in browser"

@@ -1,0 +1,11 @@
+========== 24 september 2020 ==========
+
+# System upload foto dan capture menggunakan javascript dan firebase ( sebagai database )
+
+# cara menjalankan aplikasi
+    - cd 3-pak-budi-the-cameramen
+    - klik kanan di dalam halaman code
+    - pilih "Open in browser"
+
+# Tutorial
+    - Download vidio tutorial cara menjalankan aplikasi ini di http://www.mediafire.com/file/auqq5gb1svlzzbe/cara-menjalankan-aplikas-3-pak-budi-the-cameramen.zip/file

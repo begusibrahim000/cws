@@ -1,0 +1,60 @@
+1. Toko Baju Pak Budi
+Pak Budi adalah seorang yang sangat tekun berjualan baju. Suatu ketika, ia ingin mencari tahu apakah kualitas baju - bajunya ini sudah bagus atau belum. Pak Budi kemudian mengambil beberapa buah baju ( N ) dan masing masing ia berikan nilai. Pak Budi ingin menggunakan nilai median dari nilai nilai tersebut sebagai pertimbangan apakah baju - bajunya sudah berkualitas atau belum. Nilai median adalah nilai yang berada tepat di tengah data setelah data diurutkan. Jika banyaknya data adalah genap, maka nilai median dari data tersebut adalah rata-rata kedua bilangan yang ada di tengah.
+Bantulah Pak Budi membuatkan program untuk mencari nilai median tersebut!
+Format Input:
+Baris pertama berisi sebuah bilangan bulat N. N baris berikutnya masing-masing berisi sebuah nilai kualitas baju.
+Format Output:
+Sebuah baris berisi nilai median, dalam ketelitian tepat satu angka di belakang koma.
+Contoh input:
+5
+1
+1
+3
+4
+6
+Contoh output:
+3.0
+
+2. Pak Budi Travelling
+Hari ini merupakan hari yang sangat menyenangkan bagi Pak Budi karena untuk pertama kalinya ia akan jalan - jalan ke Bali. Pak Budi mempersiapkan segala hal mulai dari pakaian, cadangan makanan, sampai kompas yang dibuatnya sendiri menggunakan Javascript!
+Kompas yang dibuat Pak Budi sangatlah unik. Ketika dijalankan, kompasnya akan memberitahu dimana lokasi Pak Budi berdiri dalam bentuk: latitude:... longitude:...
+Namun sayang... ketika Pak Budi ingin mengirimkan koordinat tersebut ke halaman selanjutnya koordinat kompas tidak berjalan sesuai dengan yang diinginkan! Sebagai programmer yang baik, kamu harus membantu Pak Budi memperbaiki kompasnya, agar Pak Budi bisa melanjutkan liburannya di Bali.
+
+    var lat; var long;
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+    }
+    function showPosition(pos) {
+        lat=pos.coords.latitude;
+        long=pos.coords.longitude;
+    }
+    document.getElementById("Simpan").onClick = getLocation();
+    var f = document.createElement("form");
+    f.setAttribute('method',"post");
+    f.setAttribute('action',"simpan.html");
+    var lo = document.createElement("long");
+    lo.setAttribute('type',"hidden");
+    lo.setAttribute('name',long);
+    var la = document.createElement("la");
+    la.setAttribute('type',"hidden");
+    la.setAttribute('name',lat);
+    var s = document.createElement("submit");
+    s.setAttribute('type',"submit");
+    s.setAttribute('id',"Simpan");
+    s.setAttribute('value',"Submit");
+    f.appendChild(lo);
+    f.appendChild(la);
+    f.appendChild(s);
+    document.getElementsByTagName('body')[0].appendChild(f);
+
+Perbaiki kode di atas supaya menghasilkan nilai lat dan long yang tepat!
+
+3. Pak Budi The Cameramen
+Pak Budi adalah seorang yang sangat kreatif dan inovatif. Selain ketekunannya dalam berjualan baju, Pak Budi juga memliki bakat fotografi dan ingin menjadi seorang fotografer. Pak Budi tidak ingin memfoto sembarang orang, ia hanya ingin memfoto model - model yang menurutnya cocok dengan ide kreatifnya. Untuk menemukan model - model itu, Pak Budi ingin melakukan audisi secara daring dengan cara membuat website yang memiliki sistem capture and upload foto ke server, kemudian foto - foto yang berada di server nantinya akan dinilai oleh Pak Budi.
+Sayangnya, Pak Budi tidak memiliki bakat pemrograman seperti yang kamu miliki! Ia tidak mampu membuat website itu sendiri, dan ingin meminta bantuanmu untuk membuatkannya! Bantulah Pak Budi membuat website sederhana yang berisi sistem capture foto dengan mengakses webcam laptop/handphone menggunakan javascript! Buatkan juga sistem upload foto tersebut ke server database noSql dengan javascript.
+
+4. Pak Budi Memilah Data
+Pak Budi mendapat tugas untuk mengambil data - data dari https://github-trending-api.now.sh/repositories dan memasukkannya ke dalam website kantornya. Data - data yang diinginkan oleh kantor hanyalah author, description, dan language.
+Pak Budi adalah orang yang sangat malas, dan sekali lagi ia meminta bantuanmu sebagai programmer yang baik untuk membantunya membuat sistem tersebut menggunakan javascript! Buatlah request ke https://github-trending-api.now.sh/repositories, ambil datanya, kemudian outputkan ke tabel HTML. Ingat, hanya data author, description, dan language!

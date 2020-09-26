@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Google Maps API: Mengubah Latitude Longitude Menjadi Alamat dengan Geocoder </title>
+</head>
+
+<body>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initialize" async defer></script>
+    <script type="text/javascript">
+        function initialize() {
+            var latlng = {
+                lat: -6.262581048548821,
+                lng: 106.86614602804184
+            };
+            var geocoder = new google.maps.Geocoder;
+            geocoder.geocode({
+                'location': latlng
+            }, function (results, status) {
+                if (status === 'OK') {
+                    if (results[0]) {
+                        rs = results[0].formatted_address;
+                    } else {
+                        rs = 'No results found';
+                    }
+                } else {
+                    rs = 'Geocoder failed due to: ' + status;
+                }
+                alert(rs);
+            });
+        }
+    </script>
+</body>
+
+</html>

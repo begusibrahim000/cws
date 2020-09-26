@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Pak Budi The Cameramen</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="text-center">3. Pak Budi The Cameramen</h1>
+        <span>
+            <h6>Download vidio tutorial cara menjalankan aplikasi ini di <a
+                    href="http://www.mediafire.com/file/auqq5gb1svlzzbe/cara-menjalankan-aplikas-3-pak-budi-the-cameramen.zip/file">http://www.mediafire.com/file/auqq5gb1svlzzbe/cara-menjalankan-aplikas-3-pak-budi-the-cameramen.zip/file</a>
+            </h6>
+        </span>
+    </div>
+    <!-- 
+    <input type="file" id="photo" />
+    <button onclick="uploadImage()">Upload Image</button> -->
+    <!-- Stream video via webcam -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>1. fitur Upload foto</h5>
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input type="file" id="photo" class="custom-file-input" id="inputGroupFile04"
+                            aria-describedby="inputGroupFileAddon04">
+                        <label class="custom-file-label" for="inputGroupFile04">Pilih Foto</label>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="inputGroupFileAddon04"
+                            onclick="uploadImage()">Tambah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 class="mt-3">2. Capture and Upload foto</h5>
+        <ul>
+            <li>- Jika muncul popup "This file wants to" | "Use your camera" ketika di aplikasi di jalankan atau di
+                reload :</li>
+            <li>- Klik tombol "Allow"</li>
+            <li>- Klik tombol "Capture"</li>
+            <li>- Akan muncul paling bawah dan klik tombol "Upload Foto Capture"</li>
+        </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <video id="video" width="400" height="400" class="img-thumbnail" playsinline controls autoplay></video>
+
+                <!-- Trigger canvas web API -->
+                <button id="snap">Capture</button>
+            </div>
+            <div class="col-md-6">
+                <!-- Webcam video snapshot -->
+                <canvas id="canvas" width="640" height="480" class="img-thumbnail"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+    <!-- myscript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
