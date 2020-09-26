@@ -1,0 +1,13 @@
+========== 24 september 2020 ==========
+
+# Ambil data API menggunakan libary AXIOS
+
+# vue versi 3
+
+# cara menjalankan aplikasi
+    - cd api
+    - npm install
+    - npm run serve
+
+# cara membersihkan cache npm 
+    - npm cache clean --force

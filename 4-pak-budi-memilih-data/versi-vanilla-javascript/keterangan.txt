@@ -1,0 +1,8 @@
+========== 24 september 2020 ==========
+
+# Ambil data API menggunakan libary JQUERY
+
+# cara menjalankan aplikasi
+    - cd api
+    - klik kanan di dalam halaman code
+    - pilih "Open in browser"
